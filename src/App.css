@@ -1,0 +1,226 @@
+.background {
+  margin: 60px auto; /* 居中 */
+  height: 600px; /* 调整高度 */
+  width: 1200px; /* 调整宽度 */
+  background-color: #f0f0f0; /* 更轻的背景颜色 */
+  border-radius: 10px; /* 圆角边框 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  display: flex; /* 使用 Flexbox 布局 */
+}
+
+.leftpagestyle {
+  background-color: #e0ddff; /* 更轻的背景颜色 */
+  height: 100%; /* 充满整个高度 */
+  width: 30%; /* 调整宽度 */
+  padding: 20px; /* 添加内边距 */
+  border-radius: 10px; /* 圆角边框 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 添加轻微阴影效果 */
+  overflow-y: auto; /* 启用垂直滚动 */
+}
+
+.rightpagestyle {
+  background-color: #edebff; 
+  height: 100%; /* 充满整个高度 */
+  width: 70%; /* 调整宽度 */
+  padding: 20px; /* 添加内边距 */
+  border-radius: 10px; /* 圆角边框 */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* 添加轻微阴影效果 */
+}
+.right0{
+  background-color: #edebff;
+  height: 10%;
+  width: 100%;
+}
+.right1{
+  background-color: #edebff;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* 使子元素在容器内左右对齐 */
+}
+.right2{
+  background-color: #fcfcfc; 
+  height: 65%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 将按钮分为三列 */
+  overflow-y: auto; /* 当按钮过多时允许垂直滚动 */
+  border-radius: 20px; /* 圆角边框 */
+}
+
+
+h1 {
+  text-align: center; /* 标题居中 */
+  margin-top: 0; /* 移除顶部边距 */
+}
+
+  li {
+    list-style: none;
+    margin-bottom: 20px;
+  }
+  
+  .queren, .quxiao {
+    padding: 9px 40px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: "Arial Rounded MT Bold", sans-serif; /* 添加粗大且圆润的字体 */
+    font-weight: bold; /* 设定字体粗细 */
+    
+}
+
+/* 对确认和取消按钮进行对齐 */
+.queren {
+    background-color: #f9f9f9;
+    color: #1f497d;
+}
+
+.quxiao {
+    background-color: #f9f9f9;
+    color: #1f497d;
+    margin-left: 10px; /* 设置左边距，使其与确认按钮之间有一定距离 */
+}
+
+.queren:active,.quxiao:active{
+  background-color: #f0f0f0;
+}
+  .createchat {
+    border: none;
+    width: 268px;
+    height: 90px;
+    padding: 20px 40px;
+    background-color: #f9f9f9; /* 更换背景颜色 */
+    margin-left: 1px;
+    color: #1f497d; /* 更换字体颜色 */
+    font-family: "Arial Rounded MT Bold", sans-serif; /* 添加粗大且圆润的字体 */
+    font-weight: bold; /* 设定字体粗细 */
+    border-radius: 40px;
+  }
+.createchat:active{
+  background-color: #f0f0f0;
+}
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .createchatlable {
+    display: block; /* 将标签转换为块级元素 */
+    text-align: left; 
+    font-weight: bold; /* 加粗字体 */
+    font-family: "Arial Rounded MT Bold", sans-serif; /* 使用圆润的字体 */
+    margin-bottom: 9px; /* 底部边距 */
+}
+
+.createchatinput {
+    display: block; /* 将输入框元素设置为块级元素 */
+    padding: 10px; /* 添加内边距，使内容与边框之间有一定距离 */
+    border: 1px solid #ccc; /* 设置边框样式为1像素宽的实线，颜色为灰色 */
+    border-radius: 20px; /* 添加圆角边框，使输入框的边角更加圆润 */
+    margin-bottom: 2px; /* 设置下边距，与下一个元素之间有2像素的空隙 */
+    
+}
+  
+  input:focus {
+    outline: none;
+    border-color: #f0f8ff;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+
+  /*chatlist*/
+  .titlechat,.titlechat2{
+    width:200px;
+    height: 60px;
+    padding: 20px 20px;
+    background-color: #f9f9f9; /* 更换背景颜色 */
+    margin-right: 25px;
+    margin-left: 1px;
+    color: #1f497d; /* 更换字体颜色 */
+    font-family: "Arial Rounded MT Bold", sans-serif; /* 添加粗大且圆润的字体 */
+    font-weight: bold; /* 设定字体粗细 */
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+  }
+  .titlechat:active{
+    background-color: #f0f0f0;
+  }
+
+  .listbackground,.listbackground2 {
+    display: flex;
+    justify-content: space-between; /* 将左右两侧元素分别对齐到容器的两侧 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+.leftlist,.leftlist2 {
+  flex: 1; /* 左侧元素占据剩余空间 */
+}
+
+.rightlist,.rightlist2 {
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  
+}
+.rl1,.rl2,.rl12,.rl22 {
+  width:35px;
+  height: 25px;
+  border: none;
+  background-color: #f9f9f9; 
+  color: #91a1b5; /* 更换字体颜色 */
+  font-family: "Arial Rounded MT Bold", sans-serif; /* 添加粗大且圆润的字体 */
+  font-weight: bold; /* 设定字体粗细 */
+  border-radius: 10px;
+  font-size: 10px;
+}
+.rl1:active,.rl2:active,.rl12:active,.rl22:active{
+  background-color: #f0f0f0;
+}
+.editinput {
+  display: block; /* 将输入框元素设置为块级元素 */
+  padding: 10px; /* 添加内边距，使内容与边框之间有一定距离 */
+  border: 1px solid #ccc; /* 设置边框样式为1像素宽的实线，颜色为灰色 */
+  border-radius: 20px; /* 添加圆角边框，使输入框的边角更加圆润 */
+  margin-bottom: 2px; /* 设置下边距，与下一个元素之间有2像素的空隙 */
+  
+}
+
+/*Mask部分*/
+.mb1 {
+  border: none;
+  width: 200px;
+  height: 50px;
+  padding: 20px 40px;
+  background-color: #e0ddff;
+  margin-left: 2px;
+  color: #1f497d; /* 更换字体颜色 */
+  font-family: "Arial Rounded MT Bold", sans-serif; /* 添加粗大且圆润的字体 */
+  font-weight: bold; /* 设定字体粗细 */
+  border-radius: 40px;
+}
+.mb2 {
+  border: none;
+  width: 100px;
+  height: 90px;
+  padding: 20px 40px;
+  background-color: #ffffff; /* 更换背景颜色 */
+  margin-left: 2px;
+  color: #1f497d; /* 更换字体颜色 */
+  font-family: "Arial Rounded MT Bold", sans-serif; /* 添加粗大且圆润的字体 */
+  font-weight: bold; /* 设定字体粗细 */
+  border-radius: 20px;
+  border: 2px solid #f7f7f7;
+
+}
+.mb2:active{
+  background-color: #f0f0f0;
+}
+.mb1:active{
+  background-color: #cfccef;
+}
+
